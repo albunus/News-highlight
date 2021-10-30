@@ -8,7 +8,7 @@ api_key = None
 #getting the news base url
 base_url = None
 
-#getting the articlces url
+#getting the articles url
 articles_url = None
 
 def configure_request(app):
