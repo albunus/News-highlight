@@ -1,36 +1,53 @@
 {% extends 'base.html'%}
 {% import 'macros.html' as macro %}
 
+
 {% block content%}
-<div class="container">
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+
+    <div class="container">
 		<!-- Business News Section  -->
-        <h3> Top  News Sources</h3>
-        <hr>
+        <h1>Welcome here...find your favourate news here categorized :business, Technology,Entertainment and Sports.<h1>
+        <div class='business'>
+            <h3> Top Business News Sources</h3>
+            <hr>
 
-        {{ macro.displaySourceList(sources)}}
+            {{ macro.displaySourceList(sources)}}
 
-        <!-- Business News Section  -->
+            <!-- Business News Section  -->
+        </div>
+            <div class='technology'>
 
-        <h3> Top Technology News Sources</h3>
-        <hr>
+                <h3> Top Technology News Sources</h3>
+                <hr>
 
-        {{ macro.displaySourceList(technology_sources)}}
+                {{ macro.displaySourceList(technology_sources)}}
 
-        <!-- Entertainment News Section  -->
+                <!-- Entertainment News Section  -->
+            </div>
+                <div class='enter'>
 
-        <h3> Top Entertainment News Sources</h3>
-        <hr>
+                <h3> Top Entertainment News Sources</h3>
+                <hr>
 
-        {{ macro.displaySourceList(entertainment_sources)}}
+                {{ macro.displaySourceList(entertainment_sources)}}
 
-        <!-- Entertainment News Section  -->
+                <!-- Entertainment News Section  -->
+                </div>
 
-        <h3> Top Sports News Sources</h3>
-        <hr>
+                    <div class='sports'>
 
-        {{ macro.displaySourceList(sports_sources)}}
+                    <h3> Top Sports News Sources</h3>
+                    <hr>
 
-</div>
+                    {{ macro.displaySourceList(sports_sources)}}
+
+                    </div>
+ 
+
+    </div>
+
 
 
 {%endblock%}

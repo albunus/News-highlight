@@ -10,10 +10,9 @@ base_url = None
 
 #getting the articles url
 articles_url = None
-head_url = None
 
 def configure_request(app):
-	global api_key,base_url,articles_url,head_url
+	global api_key,base_url,articles_url
 	api_key = app.config['NEWS_API_KEY']
 	base_url = app.config['NEWS_SOURCES_BASE_URL']
 	articles_url = app.config['ARTICLES_BASE_URL']
@@ -54,9 +53,10 @@ def process_source(sources_list):
 		category = source_item.get('category')
 		language = source_item.get('language')
 		country = source_item.get('country')
+		image =source_item.get('urlToImage')
 
 
-		sources_object = Sources(id,name,description,url,category,country,language)
+		sources_object = Sources(id,name,description,url,category,image,country,language)
 		sources_results.append(sources_object)
 
 
