@@ -11,6 +11,7 @@ class Sources:
         self.category = category
         self.country = country
         self.language = language
+       
 
 class Articles:
     '''
