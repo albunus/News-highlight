@@ -1,4 +1,4 @@
-#!/home/access/Desktop/python/news-highlight/virtual/bin/python
+#!/home/access/Desktop/python/News-highlight/virtual/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

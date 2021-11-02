@@ -12,3 +12,8 @@ a:hover{
     font-family: 'Aladin', cursive;
     color: white !important;
 }
+.navbar{
+    background-color: green;
+    color: whitesmoke;
+    border: none;
+}

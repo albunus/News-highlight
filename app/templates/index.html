@@ -9,42 +9,48 @@
     <div class="container">
 		<!-- Business News Section  -->
         <h1>Welcome here...find your favourate news here categorized :business, Technology,Entertainment and Sports.<h1>
-        <div class='business'>
-            <h3> Top Business News Sources</h3>
-            <hr>
+        
+            <div class='business'>
+                <h3> Top Business News Sources</h3>
+                <hr>
 
-            {{ macro.displaySourceList(sources)}}
+                {{ macro.displaySourceList(sources)}}
 
             <!-- Business News Section  -->
-        </div>
-            <div class='technology'>
-
-                <h3> Top Technology News Sources</h3>
-                <hr>
-
-                {{ macro.displaySourceList(technology_sources)}}
-
-                <!-- Entertainment News Section  -->
             </div>
-                <div class='enter'>
+                <div class='technology'>
 
-                <h3> Top Entertainment News Sources</h3>
-                <hr>
-
-                {{ macro.displaySourceList(entertainment_sources)}}
-
-                <!-- Entertainment News Section  -->
-                </div>
-
-                    <div class='sports'>
-
-                    <h3> Top Sports News Sources</h3>
+                    <h3> Top Technology News Sources</h3>
                     <hr>
 
-                    {{ macro.displaySourceList(sports_sources)}}
+                    {{ macro.displaySourceList(technology_sources)}}
 
+                    <!-- Entertainment News Section  -->
+                </div>
+                    <div class='enter'>
+
+                    <h3> Top Entertainment News Sources</h3>
+                    <hr>
+
+                    {{ macro.displaySourceList(entertainment_sources)}}
+
+                    <!-- Entertainment News Section  -->
                     </div>
- 
+
+                        <div class='sports'>
+
+                            <h3> Top Sports News Sources</h3>
+                            <hr>
+
+                            {{ macro.displaySourceList(sports_sources)}}
+
+                        </div>
+            </div>
+                            <div class="footer bg-secondary">
+                                {% block footer %}
+                                    <footer class="text-center text-light fs-1 pt-4 pb-4">&copy; 2021 Global News</footer>
+                                        {% endblock footer %}
+                            </div>
 
     </div>
 
